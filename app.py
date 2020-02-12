@@ -42,8 +42,5 @@ def success():
         # os.remove(saveLocation)
         # # respond with the inference
         return render_template(
-            "inference.html",
-            name="test",
-            confidence="test confidence",
-            image=f.filename,
+            "inference.html", name=inference, confidence=confidence, image=f.filename
         )
