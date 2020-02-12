@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "uploads"
 app.config["STATIC_IMG_FOLDER"] = "static/img"
 
-# model = MobileNet()
+model = MobileNet()
 
 
 @app.route("/")
@@ -48,4 +48,3 @@ def success():
             confidence="test confidence",
             image=f.filename,
         )
-
