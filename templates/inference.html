@@ -1,19 +1,26 @@
 {% extends 'base.html' %} {% block content %}
 
 <div
-  class=""
+  class="">
   <div
   class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center"
->
-  <!-- {% if saveLocation %} 
-  <img src="{{ url_for('static', filename=saveLocation) }}" />
+  >
+  {% if image %}
+  <img
+    class="img-fluid"
+    width="600"
+    height="800"
+    src="{{ url_for('img_render', filename=image) }}"
+  />
   {% else %}
   <h1>no image for whatever reason</h1>
-  {% endif %} -->
+  {% endif %}
+  </br>
   <p class="lead">File uploaded successfully. You have uploaded an image of</p>
   <h1 class="display-4">{{name}}!</h1>
   <p class="mt-5">Confidence: <strong>{{confidence}}%</strong></p>
   <p class="mt-5"><a href="/">Try again</a></p>
+  </div>
 </div>
 
 {% endblock %}

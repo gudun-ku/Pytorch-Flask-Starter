@@ -1,6 +1,6 @@
 FROM python:3.6.10-slim
 
-MAINTAINER Imad Toubal
+MAINTAINER gudun_ku
 
 WORKDIR /app
 
