@@ -109,6 +109,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+flaskml/
+flaskml.bak/
 
 # Spyder project settings
 .spyderproject
