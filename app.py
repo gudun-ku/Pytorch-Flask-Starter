@@ -41,7 +41,6 @@ def success():
         # delete file after making an inference  - let them be
         # os.remove(saveLocation)
         # # respond with the inference
-        return render_template("inference.html", name=inference, confidence=confidence)
         return render_template(
             "inference.html",
             name="test",
